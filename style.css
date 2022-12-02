@@ -92,6 +92,12 @@ img{
     transform: translate(-60%, -50%);
 
 }
+.nlang{
+
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
 
 .showcase-content{
     position: relative;
@@ -311,42 +317,7 @@ padding-left: 100px;
     z-index: -1;
 
 }
-.faq{
-    text-align: center;
-}
 
-.faq h1{
-    padding-bottom: 40px;
-    font-size: 3rem;
-
-}
-
-.questions{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 40%;
-    align-items: center;
-
-
-}
-
-.questions li{
-    padding: 20px 30px;
-    margin: 5px;
-    font-size: 1.6rem;
-    background-color: #303030;
-    color: white;
-    text-align: left;
-    width: 50%;
-
-}
-.faq p{
-
-    padding-top: 60px;
-    font-size: 1.2rem;
-    font-weight: 200;
- 
-}
 
 .input{
 
@@ -354,11 +325,15 @@ padding-left: 100px;
     align-items: center;
     grid-template-columns: 50% 40%;
 
+    margin: auto;
+    /* display: block; */
+
 
 }
 
 .input input{
 
+    
     width: 600px;
     height: 3rem;
 
@@ -407,6 +382,90 @@ padding-left: 100px;
 .footer li{
     line-height: 2.4;
 }
+
+
+
+/* New */
+
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+.faq-heading{
+    border-bottom: #777;
+    padding: 20px 60px;
+    text-align: center;
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+}
+.hr-line{
+  width: 60%;
+  margin: auto;
+  
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    /* background-color: #eee; */
+    color: white;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+
+}
+.faq-body{
+    margin: auto;
+    /* text-align: center; */
+   width: 50%; 
+   padding: auto;
+   
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/* .active,
+.faq-page:hover {
+    background-color: #777;
+} */
+
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0 18px;
+    background-color: black;
+    display: none;
+    overflow: hidden;
+}
+
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+.la-input{
+    text-align: center;
+}
+
+
+
+
+
+
 
 
 
